@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App with JavaScript</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 10px; text-align: left; }
+        .form-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Simple CRUD App</h1>
+
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Enter name">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="createUser()">Add User</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTable">
+            <!-- Users will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="javascriptcode.js"></script>
+</body>
+</html>
